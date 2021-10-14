@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    
+
+    <title>Project 1 game</title>
+  </head>
+  <body>
+      <!--Joueur 1-->
+      <div class="wrapper clearfix">
+        <div class="player-0-panel active">
+        <div class="player-name" id="name-0">Player 1</div>
+        <label class="text-select">Choisis ton personnage</label> 
+      <select name="player" id="select-player" onchange="selectedPlayer('select-player');">
+        <option value="...">...</option>
+        <option value="Esteban">Esteban</option>
+        <option value="Aurelien">Aurelien</option>
+        <option value="Nico">Nico</option>
+        <option value= "Yosr" >Yosr</option>
+      </select>
+      <div class="player-score" id="score-0">0</div>
+      <div class="player-current-box">
+          <div class="player-current-label">Score</div>
+          <div class="player-current-score" id="current-0">0</div>
+    </div>
+        </div>
+
+     <!--Joueur 2-->
+        <div class="player-1-panel">
+        <div class="player-name" id="name-1">Player 2</div>
+            <label for="text-select">Choisis ton personnage</label>
+          <select name="player" id="select-player2" onchange="selectedPlayer2('select-player2');">
+            <option value="...">...</option>
+            <option value="Esteban">Esteban</option>
+            <option value="Aurelien">Aurelien</option>
+            <option value="Nico">Nico</option>
+            <option value= "Yosr">Yosr</option>
+          </select>
+          <div class="player-score" id="score-1">0</div>
+          <div class="player-current-box">
+              <div class="player-current-label">Score</div>
+              <div class="player-current-score" id="current-1">0</div>
+          </div>
+        </div>
+    <div class="btn-primary">
+      <button class="btn-start"><i class="ion-ios-plus-outline">Start to play</button>
+        <button class="btn-roll"><i class="ion-ios-loop"></i>lancer le dé</button>
+        <button class="btn-hold"><i class="ion-ios-download-outline"></i>passer le tour</button>
+
+      <img src="dice-5.png" alt="Dice" class="dice">
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
